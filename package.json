@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/EsmeraldaPachecoGlez/Examen2-EquipoChimichanga#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.0"
   }
 }
