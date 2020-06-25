@@ -12,10 +12,14 @@
         
         .jumbotron{
             background:#0C7DEE;
+            border-radius: 0;
         }
         .card{
             text-align:center;
     		border-radius: 0;
+            border: 1px solid black;
+            width: auto; 
+            margin: auto auto;
     	}
         .nav-link{
 			padding-top: 1px;
@@ -23,36 +27,55 @@
 			color:#1A1E37;
 		}
         .row-header{
-            font-family: 100%/200% 'Monaco';
+            font-family:helvetica;
+            font-size: 1.6rem;
             color:#FFFFFF;
         }
         .nav-link strong{
 			color:red;
 		}
-    </style>
+        .card{
+            width: auto; 
+            margin: auto auto;
+        }
+        .jumbotronp-2{
+            background:#0D3D9E;
+        }
+        .row button{
+            background-color:#FFFF00;
+            border: 2px solid #D4AC0D;
+            color:blue;
+            font-size:80%;
+        }
+        
+        
+      </style>
       <title>Tienda</title>
   </head>
   <body>
       <!-- Header -->
-      
+      <%- include('header') -%> 
       <!-- /Header -->
       
       <!-- Descripcion pagina -->
+      <div class="">
+      </div>
       
       <!-- /Descripcion pagina-->
       
       <!-- Ofertas -->
       <div class = "jumbotron">
-        <div class = "container-center">
+        <div class = "container-fluid">
             <h5 class = "row-header text-center">Ofertas Retro</h5>
+            <p class ="subrayado">       </p>
             <div class = "row">
-                <div class = "col-sm-2">
+                <div class = "offset-2 col-sm-2">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
                                 <p><img src="images/NES_Mario_2Player.jpg" class="img-fluid" height="100" width="100"></p>
                                 <a class="nav-link text-center" href="#">NES Original 2 Jugadores con Mario Pack</a>
-                                <a class="nav-link" href="#">$999.99<strong>$799.99</strong></a>
+                                <a class="nav-link" href="#"><strike>$999.99</strike><strong>$799.99</strong></a>
                             </ul>
                         </div>
                     </div>
@@ -62,8 +85,9 @@
                         <div class = "card-body">
                             <ul class="nav flex-column">
                                 <p><img src="images/N64_goldeneye.jpg" class="img-fluid" height="100" width="100"></p>
+                                <p></p>
                                 <a class="nav-link text-center" href="#">N64 Golden Eye Pack</a>
-                                <a class="nav-link text-center" href="#">$1499.99<strong>$1299.99</strong></a>
+                                <a class="nav-link text-center" href="#"><strike>$1499.99</strike><strong>$1299.99</strong></a>
                             </ul>
                         </div>
                     </div>
@@ -74,7 +98,7 @@
                             <ul class="nav flex-column">
                                 <p><img src="images/Wii-system.jpg" class="img-fluid"  height="100" width="100"></p>
                                 <a class="nav-link text-center" href="#">Sistema Wii Pack</a>
-                                <a class="nav-link text-center" href="#">$899.99<strong>$699.99</strong></a>
+                                <a class="nav-link text-center" href="#"><strike>$899.99</strike><strong>$699.99</strong></a>
                             </ul>
                         </div>
                     </div>
@@ -85,15 +109,23 @@
                             <ul class="nav flex-column">
                                 <p><img src="images/NES_ContraTysonZelda.jpg" class="img-fluid"  height="100" width="100"></p>
                                 <a class="nav-link text-center" href="#">NES Original Contra, Tyson, Zelda Pack</a>
-                                <a class="nav-link text-center" href="#">$1899.99<strong>$1699.99</strong></a>
+                                <a class="nav-link text-center" href="#"><strike>$1899.99</strike><strong>$1699.99</strong></a>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class = "">
-                
+            <p></p>
+            <div class = "row">
+                <div class = "col-12 text-center">
+                <button class="btnMasOpciones">  Más Ofertas ⪢  </button>
+                </div>
             </div>
+          </div>
+      </div>
+      <div class = "container">
+          <div class="row justify-content-center">
+          
           </div>
       </div>
       <!-- Ofertas -->
