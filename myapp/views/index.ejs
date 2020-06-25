@@ -47,13 +47,36 @@
             color:blue;
             font-size:92%;
         }
-        
+        .nav-med{
+            background-color: #000099;
+        }
+        .nav-sup{
+            background-color: #0000CC;
+        }
+        .nav-inf{
+            background-color: #000066;
+        }
+        .nav-link,.nav-link:hover{
+            color:#FFFFFF;
+        }
+        .nav-med .nav-link:hover{
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
+        .nav-inf .nav-link:hover{
+            background-color:#0000CC;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
         
       </style>
       <title>Tienda</title>
   </head>
   <body>
       <!-- Header -->
+      <%- include('header') -%>
       <!-- /Header -->
       
       <!-- Descripcion pagina -->
