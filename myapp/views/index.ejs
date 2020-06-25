@@ -8,8 +8,50 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
     <style type="text/css">
-        
-        
+        .nav-med{
+            background-color: #0D3D9E;
+        }
+        .nav-sup{
+            background-color: #0C7DEE;
+        }
+        .nav-inf{
+            background-color: #0A2454;
+        }
+        .nav-sup .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-med .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-inf .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-med .nav-link:hover{
+            color:#FFFFFF;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
+        .nav-sup .nav-link:hover{
+            color:#FFFFFF; 
+        }
+        .nav-inf .nav-link:hover{
+            color:#FFFFFF;
+            background-color:#0000CC;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
+        .card-h .card-header{
+    		border-radius: 0;
+            border: 0;
+            color: #0D3D9E;
+            width: auto; 
+            margin: auto auto;
+        }
+        .card-h{
+            color: #0D3D9E;
+        }
         .jumbotron{
             background:#0C7DEE;
             border-radius: 0;
@@ -47,40 +89,6 @@
             color:blue;
             font-size:92%;
         }
-        .nav-med{
-            background-color: #000099;
-        }
-        .nav-sup{
-            background-color: #0000CC;
-        }
-        .nav-inf{
-            background-color: #000066;
-        }
-        .nav-sup .nav-link{
-            color:#FFFFFF;
-        }
-        .nav-med .nav-link{
-            color:#FFFFFF;
-        }
-        .nav-inf .nav-link{
-            color:#FFFFFF;
-        }
-        .nav-med .nav-link:hover{
-            color:#FFFFFF;
-            border-bottom-style: solid;
-            border-bottom-color:#FFFF00; 
-
-        }
-        .nav-sup .nav-link:hover{
-            color:#FFFFFF; 
-        }
-        .nav-inf .nav-link:hover{
-            color:#FFFFFF;
-            background-color:#0000CC;
-            border-bottom-style: solid;
-            border-bottom-color:#FFFF00; 
-
-        }
         
       </style>
       <title>Tienda</title>
@@ -91,18 +99,40 @@
       <!-- /Header -->
       
       <!-- Descripcion pagina -->
-      <div class="">
+      <div class="container container-fluid">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="offset-2 col-md-16">
+                      <div class="card-h">
+                          <div class="card-body">
+                              <p><img src="images/nintendo-banner.jpg" class="img-fluid" height="600" width="355"></p>
+                          </div>
+                      </div>
+                  </div>  
+                  <div class ="col-md-4">
+                        <div class="card-h">
+                            <p></p><h5 class = "card-header bg-transparent">
+                                  TIENDA DE JUEGOS RETRO!
+                            </h5>
+                            <div card="card-text">
+                                Compra videojuegos usados, consolas originales y accesorios de la vieja escuela en la tienda en linea de videojuegos retro más grande en su clase. Compra todos nuestros productos vintahe 100% auyénticos, con una garantía gratuita de 120días y envío nacional gratuito.
+                                <p></p>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
       </div>
       
       <!-- /Descripcion pagina-->
       
       <!-- Ofertas -->
-      <div class = "jumbotron">
+      <div class = "jumbotron jumbotron-fluid">
         <div class = "container-fluid">
             <h5 class = "row-header text-center">Ofertas Retro</h5>
-            <p class ="subrayado">       </p>
+            <p class ="subrayado"></p>
             <div class = "row">
-                <div class = "offset-2 col-sm-2">
+                <div class = "offset-2 col-lg-2 col-md-4 col-sm-6">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -113,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "col-sm-2">
+                <div class = "col-lg-2 col-md-4 col-sm-6">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -125,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "col-sm-2">
+                <div class = "col-lg-2 col-md-4 col-sm-6">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -136,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "col-sm-2">
+                <div class = "col-lg-2 col-md-4 col-sm-6">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -151,14 +181,9 @@
             <p></p>
             <div class = "row">
                 <div class = "col-12 text-center">
-                <button class="btnMasOpciones">  Más Ofertas ⪢  </button>
+                    <button class="btnMasOpciones">  Más Ofertas<strong> ⪢ </strong> </button>
                 </div>
             </div>
-          </div>
-      </div>
-      <div class = "container">
-          <div class="row justify-content-center">
-          
           </div>
       </div>
       <!-- Ofertas -->
