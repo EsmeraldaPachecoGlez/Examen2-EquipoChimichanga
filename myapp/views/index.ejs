@@ -99,18 +99,38 @@
     		left: 50%;
     		transform: translatex(-50%);
 		}
+        #f-of{
+            background-color: blue;
+        
+        }
+        #f-of h1{
+            color: #FFFFFF;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+        }
+        #f-of p{
+            color: #FFFFFF;
+        }
+        #f-of .resaltadas{
+            color: #FFFF00;
+        }
+        div{
+        margin: 0px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        }
 	    </style>
 
 	<title>MCPI</title>
 </head>
 <body>
-<!-- Header -->
+
 <%- include('header') -%> 
-<!-- Header -->
+
 <!-- Descripcion pagina -->
-      <div class="container">
+      <div class="container-fluid">
           <div class="container-fluid">
-              <div class="row">
+              <div class="row d-flex justify-content-center">
                   <div class="offset-2 col-md-16">
                       <div class="card-h">
                           <div class="card-body">
@@ -132,13 +152,13 @@
               </div>
           </div>
       </div>
-<!-- Descripcion pagina -->
-<!-- jumbotron-->
+
+<!-- links-->
 <div class = "jumbotron">
         <div class = "container-fluid">
             <h5 class = "row-header text-center">Ofertas Retro</h5>
             <p class ="subrayado"></p>
-            <div class = "row">
+            <div class = "row d-flex justify-content-center">
                 <div class = "offset-2 col-lg-2 col-md-4 col-sm-6">
                     <div class = "card">
                         <div class = "card-body">
@@ -193,11 +213,8 @@
             </div>
           </div>
       </div>
-
-<!--jumbotron-->
-<!-- Footer -->
-<%- include('footer') -%>
-<!-- Footer -->
+<%- include('footer') -%> 
+<!-- links-->
 <script src="/js/jquery.slim.min.js"></script>
 <script src="/js/umd/popper.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
