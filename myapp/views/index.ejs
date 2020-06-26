@@ -9,16 +9,6 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <style type="text/css">
     	.nav-med{
-<<<<<<< HEAD
-    		background-color: #0E579C;
-    	}
-    	.nav-sup{
-    		background-color: #197BD5;
-    	}
-    	.nav-inf{
-    		background-color: #063664;
-    	}
-=======
             background-color: #0D3D9E;
         }
         .nav-sup{
@@ -27,7 +17,6 @@
         .nav-inf{
             background-color: #0A2454;
         }
->>>>>>> 55ef691735397b1b9e1b498491ce12ab5be150e0
         .nav-sup .nav-link{
             color:#FFFFFF;
         }
@@ -37,29 +26,22 @@
         .nav-inf .nav-link{
             color:#FFFFFF;
         }
-		.nav-sup .nav-link:hover{
-            color:#FFFFFF;
-        }
         .nav-med .nav-link:hover{
             color:#FFFFFF;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
+        .nav-sup .nav-link:hover{
+            color:#FFFFFF; 
         }
         .nav-inf .nav-link:hover{
             color:#FFFFFF;
+            background-color:#0000CC;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
         }
-		.nav-med .nav-link:hover{
-			border-bottom-style: solid;
-			border-bottom-color:#FFFF00; 
-		}
-		.nav-inf .nav-link:hover{
-			background-color:#0000CC;
-			border-bottom-style: solid;
-			border-bottom-color:#FFFF00; 
-
-		}
-		.nav-inf #btn{
-			background-color: blue;
-
-		}
 		.card-h .card-header{
     		border-radius: 0;
             border: 0;
@@ -71,7 +53,7 @@
             color: #0D3D9E;
         }
 		.jumbotron{
-            background:#197BD5;
+            background:#0C7DEE;
             border-radius: 0;
         }
         .jumbotron .card{
@@ -110,9 +92,6 @@
     		left: 50%;
     		transform: translatex(-50%);
 		}
-        footer .nav-link{
-            color:#FFFFFF;
-        }
         #f-of{
             background-color: blue;
         
@@ -132,6 +111,24 @@
         margin: 0px !important;
         padding-right: 0px !important;
         padding-left: 0px !important;
+        }
+        footer h1{
+            color: #FFFFFF;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+        }
+        footer .nav-link{
+            color:#FFFFFF;
+        }
+        #logo-inf{
+            background-color:#0C7DEE;
+        }
+        footer .nav-link:hover{
+            color:#FFFFFF;
+            background-color:#0000CC;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
         }
 	    </style>
 
@@ -227,10 +224,7 @@
             </div>
           </div>
       </div>
-<!--jumbotron-->
-<!-- Footer -->
-<%- include('footer') -%>
-<!-- Footer -->
+<%- include('footer') -%> 
 <!-- links-->
 <script src="/js/jquery.slim.min.js"></script>
 <script src="/js/umd/popper.min.js"></script>
