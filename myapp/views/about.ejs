@@ -55,10 +55,6 @@
             color: #0D3D9E;
             display: inline-block;
         }
-        .jumbotron{
-            background:#0C7DEE;
-            border-radius: 0;
-        }
         .card{
             text-align:center;
     		border-radius: 0;
@@ -83,22 +79,31 @@
             width: auto; 
             margin: auto;
         }
-        .jumbotronp-2{
-            background:#0D3D9E;
+        
+        #f-of{
+            background-color: blue;
+        
         }
-        .row button{
-            background-color:#FFFF00;
-            border: 2px solid #D4AC0D;
-            color:blue;
-            font-size:92%;
+        #f-of h1{
+            color: #FFFFFF;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
         }
-            
+        #f-of p{
+            color: #FFFFFF;
+        }
+        #f-of .resaltadas{
+            color: #FFFF00;
+        }
+        .nav-inf #btn{
+            background-color: blue;
 
+        }
       </style>
       <title>Tienda</title>
   </head>
   <body>
-    <%- include('header',{page:page}) -%>
+    <%- include('header') -%>
       <div class="container-fluid">
         <div class="row">
             <div class="col-sm-2">
@@ -121,7 +126,8 @@
             </div>
             <div class ="offset-2 col-md-9">        
                 <div card="card-text">
-                    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  
+                    El curso estuvo muy bien ya que al principio no sabia absolutamente nada de HTML
+                    ni de CSS, pero en el transcurso de este semestre pude aprender lo básico y ya no estoy tan perdido respecto a estos temas. En general me gusto el curso y a pesar de llevar clases en línea creo que si aprendí muchas cosas nuevas en este semestre.  
                     <p></p>
                 </div>
             </div>
