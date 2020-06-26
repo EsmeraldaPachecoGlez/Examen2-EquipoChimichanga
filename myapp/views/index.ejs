@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <style type="text/css">
     	.nav-med{
-            background-color: #0E579C;
+            background-color: #0D3D9E;
         }
         .nav-sup{
-            background-color: #197BD5;
+            background-color: #0C7DEE;
         }
         .nav-inf{
-            background-color: #063664;
+            background-color: #0A2454;
         }
         .nav-sup .nav-link{
             color:#FFFFFF;
@@ -32,12 +32,16 @@
             border-bottom-color:#FFFF00; 
 
         }
+        .nav-inf #btn{
+            background-color: blue;
+
+        }
         .nav-sup .nav-link:hover{
             color:#FFFFFF; 
         }
         .nav-inf .nav-link:hover{
             color:#FFFFFF;
-            background-color:#0E579C;
+            background-color:#0000CC;
             border-bottom-style: solid;
             border-bottom-color:#FFFF00; 
 
@@ -45,7 +49,7 @@
 		.card-h .card-header{
     		border-radius: 0;
             border: 0;
-            color: #197BD5;
+            color: #0D3D9E;
             width: auto; 
             margin: auto auto;
         }
@@ -53,7 +57,7 @@
             color: #0D3D9E;
         }
 		.jumbotron{
-            background:#197BD5;
+            background:#0C7DEE;
             border-radius: 0;
         }
         .jumbotron .card{
@@ -62,6 +66,8 @@
             text-align:center;
     		border-radius: 0;
             border: 1px solid black;
+            width: auto; 
+            margin: auto auto;
     	}
     	.nav-link{
 			padding-top: 1px;
@@ -77,7 +83,7 @@
 			color:red;
 		}
 		.jumbotronp-2{
-            background:#197BD5;
+            background:#0D3D9E;
         }
         .jumbotron button{
             background-color:#FFFF00;
@@ -91,7 +97,7 @@
     		transform: translatex(-50%);
 		}
         #f-of{
-            background-color: #0E579C;
+            background-color: blue;
         
         }
         #f-of h1{
@@ -105,15 +111,10 @@
         #f-of .resaltadas{
             color: #FFFF00;
         }
-        /*div{
+        .sin-mig{
         margin: 0px !important;
         padding-right: 0px !important;
         padding-left: 0px !important;
-        }*/
-        div{
-            margin: 0px !important;
-            padding-top: 0px !important;
-            padding-bottom: 0px !important;
         }
         footer h1{
             color: #FFFFFF;
@@ -124,35 +125,35 @@
             color:#FFFFFF;
         }
         #logo-inf{
-            background-color:#197BD5;
+            background-color:#0C7DEE;
         }
         footer .nav-link:hover{
             color:#FFFFFF;
-            background-color:#0E579C;
+            background-color:#0000CC;
             border-bottom-style: solid;
             border-bottom-color:#FFFF00; 
 
         }
 	    </style>
 
-	<title>Tienda</title>
+	<title>MCPI</title>
 </head>
 <body>
 
 <%- include('header') -%> 
 
 <!-- Descripcion pagina -->
-      <div class="container-fluid">
+      <div class="container-fluid sin-mg">
           <div class="container-fluid">
               <div class="row d-flex justify-content-center">
-                  <div class="col-md-16">
+                  <div class="offset-2 col-md-16 sin-mig">
                       <div class="card-h">
                           <div class="card-body">
-                              <p></p><p></p><img src="images/nintendo-banner.jpg" class="img-fluid" height="600" width="355">
+                              <p><img src="images/nintendo-banner.jpg" class="img-fluid" height="600" width="355"></p>
                           </div>
                       </div>
                   </div>  
-                  <div class ="col-md-4">
+                  <div class ="col-md-4 sin-mig">
                         <div class="card-h">
                             <p></p><h5 class = "card-header bg-transparent">
                                   TIENDA DE JUEGOS RETRO!
@@ -168,12 +169,12 @@
       </div>
 
 <!-- links-->
-<div class = "jumbotron">
+<div class = "jumbotron sin-mig">
         <div class = "container-fluid">
             <h5 class = "row-header text-center">Ofertas Retro</h5>
             <p class ="subrayado"></p>
             <div class = "row d-flex justify-content-center">
-                <div class = "col-lg-2 col-md-4 col-sm-6">
+                <div class = "offset-2 col-lg-2 col-md-4 col-sm-6 sin-mig">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -184,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "col-lg-2 col-md-4 col-sm-6">
+                <div class = "col-lg-2 col-md-4 col-sm-6 sin-mig">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -196,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "col-lg-2 col-md-4 col-sm-6">
+                <div class = "col-lg-2 col-md-4 col-sm-6 sin-mig">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -207,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <div class = "col-lg-2 col-md-4 col-sm-6">
+                <div class = "col-lg-2 col-md-4 col-sm-6 sin-mig">
                     <div class = "card">
                         <div class = "card-body">
                             <ul class="nav flex-column">
@@ -221,9 +222,8 @@
             </div>
             <p></p>
             <div class = "row">
-                <div class = "col-12 text-center">
+                <div class = "col-12 text-center sin-mig">
                     <button class="btnMasOpciones">  Más Ofertas<strong> ⪢ </strong> </button>
-                    <p></p><p></p>
                 </div>
             </div>
           </div>
