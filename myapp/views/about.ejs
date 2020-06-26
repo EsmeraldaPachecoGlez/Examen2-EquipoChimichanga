@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style type="text/css">
+        .nav-med{
+            background-color: #0D3D9E;
+        }
+        .nav-sup{
+            background-color: #0C7DEE;
+        }
+        .nav-inf{
+            background-color: #0A2454;
+        }
+        .nav-sup .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-med .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-inf .nav-link{
+            color:#FFFFFF;
+        }
+        .nav-med .nav-link:hover{
+            color:#FFFFFF;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
+        .nav-sup .nav-link:hover{
+            color:#FFFFFF; 
+        }
+        .nav-inf .nav-link:hover{
+            color:#FFFFFF;
+            background-color:#0000CC;
+            border-bottom-style: solid;
+            border-bottom-color:#FFFF00; 
+
+        }
+        .card-h .card-header{
+    		border-radius: 0;
+            border: 0;
+            color: black;
+            width: auto; 
+            margin: auto auto;
+            font-family:Helvetica;
+            display: inline-block;
+        }
+        .card-h{
+            color: #0D3D9E;
+            display: inline-block;
+        }
+        .jumbotron{
+            background:#0C7DEE;
+            border-radius: 0;
+        }
+        .card{
+            text-align:center;
+    		border-radius: 0;
+            border: 1px solid black;
+            width: auto; 
+            margin: auto auto;
+    	}
+        .nav-link{
+			padding-top: 1px;
+			padding-bottom: 1px;
+			color:#1A1E37;
+		}
+        .row-header{
+            font-family:helvetica;
+            font-size: 1.6rem;
+            color:#FFFFFF;
+        }
+        .nav-link strong{
+			color:red;
+		}
+        .card{
+            width: auto; 
+            margin: auto;
+        }
+        .jumbotronp-2{
+            background:#0D3D9E;
+        }
+        .row button{
+            background-color:#FFFF00;
+            border: 2px solid #D4AC0D;
+            color:blue;
+            font-size:92%;
+        }
+            
+
+      </style>
+      <title>Tienda</title>
+  </head>
+  <body>
+    <%- include('header',{page:page}) -%>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class = "card-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/images/germanlogo.png" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class ="col-md-8">
+                <div class="card-h">
+                    <p></p><h5 class = "card-header bg-transparent col-sm-6">
+                        José Germán González Rodarte
+                        </h5>
+                </div>
+            </div>
+            <div class ="offset-2 col-md-9">        
+                <div card="card-text">
+                    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto  
+                    <p></p>
+                </div>
+            </div>
+        </div>    
+    </div>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class = "card-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/images/esmeraldalogo.png" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class ="col-md-8">
+                <div class="card-h">
+                    <p></p><h5 class = "card-header bg-transparent col-sm-6">
+                        María Esmeralda Pacheco González
+                        </h5>
+                  </div>
+            </div>
+            <div class ="offset-2 col-md-9">        
+                <div card="card-text">
+                    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                    <p></p>
+                </div>
+            </div>
+        </div>    
+    </div>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class = "card-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/images/andrealogo.png" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class ="col-md-8">
+                <div class="card-h">
+                    <p></p><h5 class = "card-header bg-transparent col-sm-6">
+                        Andrea Barragán González
+                        </h5>
+                  </div>
+            </div>
+            <div class ="offset-2 col-md-9">        
+                <div card="card-text">
+                    Este curso me ayudó a aprender demasiado. Cosas que antes no comprendería ahora son claras. Me gustó conocer los principios, y todos aquellos conceptos necesarios para desarrollar interfaces. Los colores, tamaños, consideraciones, etc. Sé que estoy en el camino correcto y que he tomado buenas decisiones, respecto a mis estudios.
+                    <p></p>
+                </div>
+            </div>
+        </div>    
+    </div> 
+    <%- include('footer') -%>
+  </body>
+</html>
