@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
     <style type="text/css">
-        .nav-med{
-            background-color: #0D3D9E;
-        }
-        .nav-sup{
-            background-color: #0C7DEE;
-        }
-        .nav-inf{
-            background-color: #0A2454;
-        }
+    	.nav-med{
+    		background-color: #000099;
+    	}
+    	.nav-sup{
+    		background-color: #0000CC;
+    	}
+    	.nav-inf{
+    		background-color: #000066;
+    	}
         .nav-sup .nav-link{
             color:#FFFFFF;
         }
@@ -26,23 +26,30 @@
         .nav-inf .nav-link{
             color:#FFFFFF;
         }
+		.nav-sup .nav-link:hover{
+            color:#FFFFFF;
+        }
         .nav-med .nav-link:hover{
             color:#FFFFFF;
-            border-bottom-style: solid;
-            border-bottom-color:#FFFF00; 
-
-        }
-        .nav-sup .nav-link:hover{
-            color:#FFFFFF; 
         }
         .nav-inf .nav-link:hover{
             color:#FFFFFF;
-            background-color:#0000CC;
-            border-bottom-style: solid;
-            border-bottom-color:#FFFF00; 
-
         }
-        .card-h .card-header{
+		.nav-med .nav-link:hover{
+			border-bottom-style: solid;
+			border-bottom-color:#FFFF00; 
+		}
+		.nav-inf .nav-link:hover{
+			background-color:#0000CC;
+			border-bottom-style: solid;
+			border-bottom-color:#FFFF00; 
+
+		}
+		.nav-inf #btn{
+			background-color: blue;
+
+		}
+		.card-h .card-header{
     		border-radius: 0;
             border: 0;
             color: #0D3D9E;
@@ -52,23 +59,25 @@
         .card-h{
             color: #0D3D9E;
         }
-        .jumbotron{
+		.jumbotron{
             background:#0C7DEE;
             border-radius: 0;
         }
-        .card{
+        .jumbotron .card{
+        	width: auto; 
+            margin: auto;
             text-align:center;
     		border-radius: 0;
             border: 1px solid black;
             width: auto; 
             margin: auto auto;
     	}
-        .nav-link{
+    	.nav-link{
 			padding-top: 1px;
 			padding-bottom: 1px;
 			color:#1A1E37;
 		}
-        .row-header{
+		.row-header{
             font-family:helvetica;
             font-size: 1.6rem;
             color:#FFFFFF;
@@ -76,30 +85,30 @@
         .nav-link strong{
 			color:red;
 		}
-        .card{
-            width: auto; 
-            margin: auto;
-        }
-        .jumbotronp-2{
+		.jumbotronp-2{
             background:#0D3D9E;
         }
-        .row button{
+        .jumbotron button{
             background-color:#FFFF00;
             border: 2px solid #D4AC0D;
             color:blue;
             font-size:92%;
         }
-        
-      </style>
-      <title>Tienda</title>
-  </head>
-  <body>
-      <!-- Header -->
-      <%- include('header') -%>
-      <!-- /Header -->
-      
-      <!-- Descripcion pagina -->
-      <div class="container container-fluid">
+        .nav-med .navbar-toggler{
+    		position: relative;
+    		left: 50%;
+    		transform: translatex(-50%);
+		}
+	    </style>
+
+	<title>MCPI</title>
+</head>
+<body>
+<!-- Header -->
+<%- include('header') -%> 
+<!-- Header -->
+<!-- Descripcion pagina -->
+      <div class="container">
           <div class="container-fluid">
               <div class="row">
                   <div class="offset-2 col-md-16">
@@ -123,11 +132,9 @@
               </div>
           </div>
       </div>
-      
-      <!-- /Descripcion pagina-->
-      
-      <!-- Ofertas -->
-      <div class = "jumbotron jumbotron-fluid">
+<!-- Descripcion pagina -->
+<!-- jumbotron-->
+<div class = "jumbotron">
         <div class = "container-fluid">
             <h5 class = "row-header text-center">Ofertas Retro</h5>
             <p class ="subrayado"></p>
@@ -186,10 +193,13 @@
             </div>
           </div>
       </div>
-      <!-- Ofertas -->
-      
-      <!-- Footer -->
-      
-      <!-- /Footer-->
-  </body>
+
+<!--jumbotron-->
+<!-- Footer -->
+
+<!-- Footer -->
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/umd/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
 </html>
